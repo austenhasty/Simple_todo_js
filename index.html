@@ -4,14 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./style.css">
   <title>Simple To-Do List</title>
 </head>
 <body>
   <div class="container">
     <div class="list-holder">
-      <h1>Today's Tasks</h1>
+      <h1 id="title">Today's Tasks:</h1>
+      <br>
+      <form id="create-task-form" action="#" method="post">
+        <label for="new-task-description">Enter New Task:</label>
+        <input type="text" id="new-task-description" name="new-task-description" placeholder="New Task">
+        <input type="submit" value="Create New Task">
+        <div class="list-content">
+          <h3>My Tasks:</h3>
+          <ul id="list">
+
+          </ul>
+
+        </div>
+      </form>
 
     </div>
   </div>
 </body>
+<script type="text/javascript" src="./src/index.js">
+
+</script>
 </html>
