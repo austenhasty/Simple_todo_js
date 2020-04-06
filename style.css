@@ -1,0 +1,30 @@
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  border-style: solid
+}
+
+.list-content {
+  text-align: center;
+}
+
+#list {
+  background-color: yellow;
+  margin: 5%;
+  border-style: solid;
+  border-width: 1px
+}
+
+#list li {
+  font-style: italic;
+  list-style-type: none;
+  margin: auto;
+  margin-bottom: 5px;
+  width: 50%;
+  text-align: center;
+}
