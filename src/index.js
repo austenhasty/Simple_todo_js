@@ -22,6 +22,13 @@ function addTask(ev) {
   const newTaskDescription = document.getElementById('new-task-description')
   const newTask = document.createElement('li')
   newTask.textContent = newTaskDescription.value + ' '
+
+  // console.log(newTaskDescription.value.length)
+  if (newTaskDescription.value.length === 0) {
+    window.alert('Please enter a task!')
+    return false
+  }
+
   appendTask(newTask)
 }
 
@@ -29,6 +36,7 @@ function appendTask(newTask) {
   const list = document.getElementById('list')
   const deleteBtn = document.createElement('button')
   const newTaskDescription = document.getElementById('new-task-description')
+
 
   deleteBtn.textContent = 'Delete'
 
@@ -40,8 +48,3 @@ function appendTask(newTask) {
     list.removeChild(newTask)
   })
 }
-
-// function deleteTask() {
-//
-//   newTask.parentremoveChild(list.lastchild)
-// }
